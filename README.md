@@ -16,6 +16,11 @@ uv sync
 pip install git+https://github.com/egorsmkv/tts_uk
 ```
 
+## Google Colabs
+
+- CPU: https://colab.research.google.com/drive/1dsQiVhTaNw5lRfUiCZeECMuEbtEEYqbZ?usp=sharing
+- GPU: https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing
+
 ## Example
 
 ```python
