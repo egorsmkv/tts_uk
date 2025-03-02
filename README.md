@@ -31,8 +31,8 @@ import torchaudio
 from radtts_uk.inference import synthesis
 
 mels, vocos_wav_gen, stats = synthesis(
-    "Ви можете протестувати синтез мовлення українською мовою. Просто введіть текст, який ви хочете прослухати.",  # text
-    voice="tetiana",  # voice: tetiana, mykyta, lada
+    text="Ви можете протестувати синтез мовлення українською мовою. Просто введіть текст, який ви хочете прослухати.",
+    voice="tetiana",  # tetiana, mykyta, lada
     n_takes=1,
     use_latest_take=False,
     token_dur_scaling=1,
