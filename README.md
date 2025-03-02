@@ -1,4 +1,4 @@
-# RAD-TTS UK library
+# Text-to-Speech for Ukrainian
 
 Demo: https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo
 
