@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "radtts_uk"
+version = "1.0.0"
+description = "RAD-TTS++ for Ukrainian"
+readme = "README.md"
+requires-python = ">=3.9,<=3.14"
+authors = [
+  { name = "Yehor Smoliakov", email = "egorsmkv@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "huggingface_hub>=0.29.1",
+    "torch>=2.6.0",
+    "torchaudio>=2.6.0",
+    "scipy>=1",
+    "numba>=0.60",
+    "librosa>=0.10.2.post1",
+    "vocos @ git+https://github.com/langtech-bsc/vocos.git@matcha",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/egorsmkv/radtts-pp-uk"
+"Bug Tracker" = "https://github.com/egorsmkv/radtts-pp-uk"
+
+[project.optional-dependencies]
+dev = [
+    "ruff>=0.9",
+]
