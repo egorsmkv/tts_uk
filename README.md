@@ -1,5 +1,7 @@
 # RAD-TTS UK library
 
+Demo: https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo
+
 ## Install
 
 ```shell
