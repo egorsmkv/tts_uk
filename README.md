@@ -13,5 +13,5 @@ uv sync
 ## Install as Python package
 
 ```shell
-pip install -e .
+pip install git+https://github.com/egorsmkv/tts_uk
 ```
