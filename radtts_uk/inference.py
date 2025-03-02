@@ -1,5 +1,4 @@
 import os
-import json
 import time
 
 from pathlib import Path
@@ -126,24 +125,6 @@ def synthesis(
     if not text:
         raise ValueError("Please paste your text.")
 
-    request = {
-        "text": text,
-        "voice": voice,
-        "n_takes": n_takes,
-        "use_latest_take": use_latest_take,
-        "token_dur_scaling": token_dur_scaling,
-        "f0_mean": f0_mean,
-        "f0_std": f0_std,
-        "energy_mean": energy_mean,
-        "energy_std": energy_std,
-        "sigma_decoder": sigma_decoder,
-        "sigma_token_duration": sigma_token_duration,
-        "sigma_f0": sigma_f0,
-        "sigma_energy": sigma_energy,
-    }
-
-    print(json.dumps(request, indent=2))
-
     speaker = speaker_text = speaker_attributes = voice.lower()
 
     tensor_text = torch.LongTensor(text_processor.tp.encode_text(text)).to(device)
@@ -186,8 +167,6 @@ def synthesis(
 
                 mels.append(outputs["mel"])
 
-    print("Synthesized MEL spectrograms, converting to WAVE.")
-
     wav_gen_all = []
     for mel in mels:
         wav_gen_all.append(vocos.decode(mel))
@@ -205,6 +184,12 @@ def synthesis(
     speed_ratio = duration / elapsed_time
     speech_rate = len(text.split(" ")) / duration
 
-    rtf_value = f"Real-Time Factor: {round(rtf, 4)}, time: {round(elapsed_time, 4)} seconds, audio duration: {round(duration, 4)} seconds. Speed ratio: {round(speed_ratio, 2)}x. Speech rate: {round(speech_rate, 4)} words-per-second."
+    stats = {
+        "rtf": rtf,
+        "time": elapsed_time,
+        "audio_duration": duration,
+        "speed_ratio": speed_ratio,
+        "speech_rate": speech_rate,
+    }
 
-    return [wav_gen.cpu(), rtf_value]
+    return [mels, wav_gen.cpu(), stats]
