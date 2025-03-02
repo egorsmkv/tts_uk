@@ -68,7 +68,7 @@ vocos_model = hf_hub_download(
 )
 
 vocos_model_path = Path(vocos_model)
-state_dict = torch.load(vocos_model_path, map_location="cpu")
+state_dict = torch.load(vocos_model_path, weights_only=True, map_location="cpu")
 
 vocos = Vocos.from_hparams(vocos_config).to(device)
 vocos.load_state_dict(state_dict, strict=True)
@@ -80,7 +80,7 @@ radtts.enable_inverse_cache()  # cache inverse matrix for 1x1 invertible convs
 
 radtts_model_path = Path("models/radtts-pp-dap-model/model_dap_84000_state.pt")
 
-checkpoint_dict = torch.load(radtts_model_path, map_location="cpu")
+checkpoint_dict = torch.load(radtts_model_path, weights_only=True, map_location="cpu")
 state_dict = checkpoint_dict["state_dict"]
 
 radtts.load_state_dict(state_dict, strict=False)
