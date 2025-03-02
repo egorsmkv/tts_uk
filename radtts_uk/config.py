@@ -1,11 +1,11 @@
-{
+config = {
     "data_config": {
         "training_files": {
             "LJS": {
                 "basedir": "filelists/",
                 "audiodir": "wavs",
                 "filelist": "3speakers_ukrainian_train_filelist_dc.txt",
-                "lmdbpath": ""
+                "lmdbpath": "",
             }
         },
         "validation_files": {
@@ -13,7 +13,7 @@
                 "basedir": "filelists/",
                 "audiodir": "wavs",
                 "filelist": "3speakers_ukrainian_val_filelist_dc.txt",
-                "lmdbpath": ""
+                "lmdbpath": "",
             }
         },
         "dur_min": 0.1,
@@ -28,30 +28,28 @@
         "f0_min": 80.0,
         "f0_max": 640.0,
         "max_wav_value": 32768.0,
-        "use_f0": true,
+        "use_f0": True,
         "use_log_f0": 0,
-        "use_energy_avg": true,
-        "use_scaled_energy": true,
+        "use_energy_avg": True,
+        "use_scaled_energy": True,
         "symbol_set": "ukrainian",
-        "cleaner_names": [
-            "ukrainian_cleaners"
-        ],
+        "cleaner_names": ["ukrainian_cleaners"],
         "heteronyms_path": "tts_text_processing/heteronyms",
         "phoneme_dict_path": "tts_text_processing/cmudict-0.7b",
         "p_phoneme": 0.0,
         "handle_phoneme": "word",
         "handle_phoneme_ambiguous": "ignore",
-        "include_speakers": null,
+        "include_speakers": None,
         "n_frames": -1,
         "betabinom_cache_path": "/home/dmytro_chaplinsky/RAD-TTS/radtts-code/cache",
         "lmdb_cache_path": "",
-        "use_attn_prior_masking": true,
-        "prepend_space_to_text": true,
-        "append_space_to_text": true,
-        "add_bos_eos_to_text": false,
+        "use_attn_prior_masking": True,
+        "prepend_space_to_text": True,
+        "append_space_to_text": True,
+        "add_bos_eos_to_text": False,
         "betabinom_scaling_factor": 1.0,
-        "distance_tx_unvoiced": false,
-        "mel_noise_scale": 0.0
+        "distance_tx_unvoiced": False,
+        "mel_noise_scale": 0.0,
     },
     "model_config": {
         "n_speakers": 3,
@@ -63,7 +61,7 @@
         "n_mel_channels": 80,
         "n_hidden": 1024,
         "mel_encoder_n_hidden": 512,
-        "dummy_speaker_embedding": false,
+        "dummy_speaker_embedding": False,
         "n_early_size": 2,
         "n_early_every": 2,
         "n_group_size": 2,
@@ -71,22 +69,22 @@
         "include_modules": "decatndpmvpredapm",
         "scaling_fn": "tanh",
         "matrix_decomposition": "LUS",
-        "learn_alignments": true,
-        "use_speaker_emb_for_alignment": false,
-        "attn_straight_through_estimator": true,
-        "use_context_lstm": true,
+        "learn_alignments": True,
+        "use_speaker_emb_for_alignment": False,
+        "attn_straight_through_estimator": True,
+        "use_context_lstm": True,
         "context_lstm_norm": "spectral",
-        "context_lstm_w_f0_and_energy": true,
+        "context_lstm_w_f0_and_energy": True,
         "text_encoder_lstm_norm": "spectral",
         "n_f0_dims": 1,
         "n_energy_avg_dims": 1,
-        "use_first_order_features": false,
+        "use_first_order_features": False,
         "unvoiced_bias_activation": "relu",
-        "decoder_use_partial_padding": true,
-        "decoder_use_unvoiced_bias": true,
-        "ap_pred_log_f0": true,
-        "ap_use_unvoiced_bias": false,
-        "ap_use_voiced_embeddings": true,
+        "decoder_use_partial_padding": True,
+        "decoder_use_unvoiced_bias": True,
+        "ap_pred_log_f0": True,
+        "ap_use_unvoiced_bias": False,
+        "ap_use_voiced_embeddings": True,
         "dur_model_config": {
             "name": "dap",
             "hparams": {
@@ -95,18 +93,18 @@
                     "in_dim": 512,
                     "reduction_factor": 16,
                     "norm": "weightnorm",
-                    "non_linearity": "relu"
+                    "non_linearity": "relu",
                 },
-                "take_log_of_input": true,
+                "take_log_of_input": True,
                 "arch_hparams": {
                     "out_dim": 1,
                     "n_layers": 2,
                     "n_channels": 256,
                     "kernel_size": 3,
                     "p_dropout": 0.25,
-                    "in_dim": 48
-                }
-            }
+                    "in_dim": 48,
+                },
+            },
         },
         "f0_model_config": {
             "name": "dap",
@@ -116,19 +114,19 @@
                     "in_dim": 512,
                     "reduction_factor": 16,
                     "norm": "weightnorm",
-                    "non_linearity": "relu"
+                    "non_linearity": "relu",
                 },
-                "take_log_of_input": false,
-                "use_transformer": false,
+                "take_log_of_input": False,
+                "use_transformer": False,
                 "arch_hparams": {
                     "out_dim": 1,
                     "n_layers": 2,
                     "n_channels": 256,
                     "kernel_size": 11,
                     "p_dropout": 0.5,
-                    "in_dim": 48
-                }
-            }
+                    "in_dim": 48,
+                },
+            },
         },
         "energy_model_config": {
             "name": "dap",
@@ -138,30 +136,30 @@
                     "in_dim": 512,
                     "reduction_factor": 16,
                     "norm": "weightnorm",
-                    "non_linearity": "relu"
+                    "non_linearity": "relu",
                 },
-                "take_log_of_input": false,
-                "use_transformer": false,
+                "take_log_of_input": False,
+                "use_transformer": False,
                 "arch_hparams": {
                     "out_dim": 1,
                     "n_layers": 2,
                     "n_channels": 256,
                     "kernel_size": 3,
                     "p_dropout": 0.25,
-                    "in_dim": 48
-                }
-            }
+                    "in_dim": 48,
+                },
+            },
         },
         "v_model_config": {
             "name": "dap",
             "hparams": {
                 "n_speaker_dim": 16,
-                "take_log_of_input": false,
+                "take_log_of_input": False,
                 "bottleneck_hparams": {
                     "in_dim": 512,
                     "reduction_factor": 16,
                     "norm": "weightnorm",
-                    "non_linearity": "relu"
+                    "non_linearity": "relu",
                 },
                 "arch_hparams": {
                     "out_dim": 1,
@@ -171,9 +169,9 @@
                     "p_dropout": 0.5,
                     "lstm_type": "",
                     "use_linear": 1,
-                    "in_dim": 48
-                }
-            }
-        }
-    }
+                    "in_dim": 48,
+                },
+            },
+        },
+    },
 }

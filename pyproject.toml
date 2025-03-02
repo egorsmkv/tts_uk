@@ -17,8 +17,8 @@ classifiers = [
 ]
 dependencies = [
     "huggingface_hub>=0.29.1",
-    "torch>=2.6.0",
-    "torchaudio>=2.6.0",
+    "torch>=2.2.0",
+    "torchaudio>=2.2.0",
     "scipy>=1",
     "numba>=0.60",
     "librosa>=0.10.2.post1",

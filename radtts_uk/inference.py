@@ -13,6 +13,7 @@ from huggingface_hub import hf_hub_download
 from .radtts import RADTTS
 from .data import TextProcessor
 from .common import update_params
+from .config import config
 from .torch_env import device
 
 
@@ -53,8 +54,6 @@ download_file_from_repo(
 params = []
 
 # Load the config
-current_dir = Path(__file__).parent
-config = json.loads((current_dir / "config.json").read_text())
 update_params(config, params)
 
 data_config = config["data_config"]
