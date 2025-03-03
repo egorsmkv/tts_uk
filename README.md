@@ -1,6 +1,6 @@
 # Text-to-Speech for Ukrainian
 
-Demo: https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo
+Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo).
 
 ## Notes
 
@@ -20,6 +20,8 @@ Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#inst
 ```shell
 pip install git+https://github.com/egorsmkv/tts_uk
 ```
+
+Or [download the repository](https://github.com/egorsmkv/tts_uk/archive/refs/heads/main.zip) as a ZIP archive.
 
 ## Google Colabs
 
