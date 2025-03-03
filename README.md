@@ -10,10 +10,6 @@ Demo: https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo
 ## Install
 
 ```shell
-uv venv --python 3.10
-
-source .venv/bin/activate
-
 uv sync
 ```
 
