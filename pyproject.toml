@@ -22,7 +22,6 @@ dependencies = [
     "scipy>=1",
     "numba>=0.60",
     "librosa>=0.10.2.post1",
-    "vocos @ git+https://github.com/langtech-bsc/vocos.git@matcha",
 ]
 
 [project.optional-dependencies]
