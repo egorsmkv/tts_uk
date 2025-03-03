@@ -22,3 +22,6 @@ jobs:
 
       - name: Install the project
         run: uv sync
+
+      - name: Test run of example
+        run: uv run example.py
