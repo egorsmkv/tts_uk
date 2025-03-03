@@ -17,7 +17,7 @@ from .torch_env import device
 
 
 # Vocoder
-from vocos import Vocos
+from vocos.pretrained import Vocos
 
 
 def download_file_from_repo(

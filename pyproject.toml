@@ -28,3 +28,6 @@ dependencies = [
 dev = [
     "ruff>=0.9",
 ]
+
+[tool.setuptools]
+packages = ["radtts_uk", "vocos"]

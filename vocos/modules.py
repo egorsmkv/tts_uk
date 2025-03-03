@@ -181,10 +181,10 @@ class ResBlock1(nn.Module):
         return x
 
     def remove_weight_norm(self):
-        for l in self.convs1:
-            remove_weight_norm(l)
-        for l in self.convs2:
-            remove_weight_norm(l)
+        for layer in self.convs1:
+            remove_weight_norm(layer)
+        for layer in self.convs2:
+            remove_weight_norm(layer)
 
     @staticmethod
     def get_padding(kernel_size: int, dilation: int = 1) -> int:
