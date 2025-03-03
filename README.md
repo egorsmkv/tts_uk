@@ -18,6 +18,10 @@ Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#inst
 ## Install as Python package
 
 ```shell
+# from PyPI
+pip install tts_uk
+
+# or from GitHub
 pip install git+https://github.com/egorsmkv/tts_uk
 ```
 
