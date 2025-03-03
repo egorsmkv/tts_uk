@@ -25,6 +25,8 @@ pip install git+https://github.com/egorsmkv/tts_uk
 
 ## Example
 
+As the code:
+
 ```python
 import torchaudio
 
@@ -50,3 +52,10 @@ print(stats)
 
 torchaudio.save("audio.wav", vocos_wav_gen.cpu(), 44_100, encoding="PCM_S")
 ```
+
+Or using a terminal:
+
+```shell
+uv run example.py
+```
+
