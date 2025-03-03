@@ -17,6 +17,8 @@ source .venv/bin/activate
 uv sync
 ```
 
+Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) section.
+
 ## Install as Python package
 
 ```shell
