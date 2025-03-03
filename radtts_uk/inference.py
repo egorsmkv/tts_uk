@@ -1,23 +1,20 @@
 import os
 import time
-
 from pathlib import Path
 
 import torch
-
-
 from huggingface_hub import hf_hub_download
-
-# RAD-TTS code
-from .radtts import RADTTS
-from .data import TextProcessor
-from .common import update_params
-from .config import config
-from .torch_env import device
-
 
 # Vocoder
 from vocos.pretrained import Vocos
+
+from .common import update_params
+from .config import config
+from .data import TextProcessor
+
+# RAD-TTS code
+from .radtts import RADTTS
+from .torch_env import device
 
 
 def download_file_from_repo(

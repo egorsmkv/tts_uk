@@ -4,7 +4,7 @@ import torch
 from torch import nn
 from torch.nn.utils import weight_norm
 
-from vocos.modules import ConvNeXtBlock, ResBlock1, AdaLayerNorm
+from vocos.modules import AdaLayerNorm, ConvNeXtBlock, ResBlock1
 
 
 class Backbone(nn.Module):

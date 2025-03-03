@@ -41,9 +41,8 @@
 """adapted from https://github.com/keithito/tacotron"""
 
 import re
-from string import punctuation
 from functools import reduce
-
+from string import punctuation
 
 import torch
 import torch.utils.data

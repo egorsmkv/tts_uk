@@ -1,11 +1,12 @@
 from __future__ import annotations
 
-from typing import Any, Dict, Tuple, Union, Optional
+from typing import Any, Dict, Optional, Tuple, Union
 
 import torch
 import yaml
 from huggingface_hub import hf_hub_download
 from torch import nn
+
 from vocos.feature_extractors import FeatureExtractor
 from vocos.heads import FourierHead
 from vocos.models import Backbone

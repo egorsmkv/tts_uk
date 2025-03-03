@@ -22,11 +22,15 @@
 import torch
 from torch import nn
 
-from .common import ConvNorm, Invertible1x1Conv
-from .common import AffineTransformationLayer, SplineTransformationLayer
-from .common import ConvLSTMLinear
+from .autoregressive_flow import AR_Back_Step, AR_Step
+from .common import (
+    AffineTransformationLayer,
+    ConvLSTMLinear,
+    ConvNorm,
+    Invertible1x1Conv,
+    SplineTransformationLayer,
+)
 from .transformer import FFTransformer
-from .autoregressive_flow import AR_Step, AR_Back_Step
 
 
 def get_attribute_prediction_model(config):

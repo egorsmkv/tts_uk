@@ -1,7 +1,7 @@
 import numpy as np
 import scipy
 import torch
-from torch import nn, view_as_real, view_as_complex
+from torch import nn, view_as_complex, view_as_real
 
 
 class ISTFT(nn.Module):
