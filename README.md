@@ -2,6 +2,11 @@
 
 Demo: https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo
 
+## Notes
+
+- Multispeaker: 2 female + 1 male voices
+- Tested on **Windows** and **WSL**.
+
 ## Install
 
 ```shell
