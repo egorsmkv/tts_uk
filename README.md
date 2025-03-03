@@ -39,7 +39,7 @@ As the code:
 ```python
 import torchaudio
 
-from radtts_uk.inference import synthesis
+from tts_uk.inference import synthesis
 
 mels, vocos_wav_gen, stats = synthesis(
     text="Ви можете протестувати синтез мовлення українською мовою. Просто введіть текст, який ви хочете прослухати.",
