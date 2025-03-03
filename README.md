@@ -10,22 +10,21 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 ## Install
 
 ```shell
+# from PyPI
+pip install tts-uk
+
+# from GitHub
+pip install git+https://github.com/egorsmkv/tts_uk
+
+# using GitHub
+git clone https://github.com/egorsmkv/tts_uk
+cd tts_uk
 uv sync
 ```
 
 Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) section.
 
-## Install as Python package
-
-```shell
-# from PyPI
-pip install tts-uk
-
-# or from GitHub
-pip install git+https://github.com/egorsmkv/tts_uk
-```
-
-Or [download the repository](https://github.com/egorsmkv/tts_uk/archive/refs/heads/main.zip) as a ZIP archive.
+Also, you can [download the repository](https://github.com/egorsmkv/tts_uk/archive/refs/heads/main.zip) as a ZIP archive.
 
 ## Google Colabs
 
@@ -67,4 +66,3 @@ Or using a terminal:
 ```shell
 uv run example.py
 ```
-

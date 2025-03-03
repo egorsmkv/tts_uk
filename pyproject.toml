@@ -35,7 +35,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["groovy", "vocos"]
+packages = ["tts_uk", "vocos"]
 
 [tool.hatch.version]
 path = "tts_uk/version.txt"
