@@ -19,7 +19,7 @@ Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#inst
 
 ```shell
 # from PyPI
-pip install radtts-uk
+pip install tts-uk
 
 # or from GitHub
 pip install git+https://github.com/egorsmkv/tts_uk
