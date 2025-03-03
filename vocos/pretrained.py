@@ -39,7 +39,10 @@ class Vocos(nn.Module):
     """
 
     def __init__(
-        self, feature_extractor: FeatureExtractor, backbone: Backbone, head: FourierHead,
+        self,
+        feature_extractor: FeatureExtractor,
+        backbone: Backbone,
+        head: FourierHead,
     ):
         super().__init__()
         self.feature_extractor = feature_extractor
@@ -64,8 +67,12 @@ class Vocos(nn.Module):
         """
         Class method to create a new Vocos model instance from a pre-trained model stored in the Hugging Face model hub.
         """
-        config_path = hf_hub_download(repo_id=repo_id, filename="config.yaml", revision=revision)
-        model_path = hf_hub_download(repo_id=repo_id, filename="pytorch_model.bin", revision=revision)
+        config_path = hf_hub_download(
+            repo_id=repo_id, filename="config.yaml", revision=revision
+        )
+        model_path = hf_hub_download(
+            repo_id=repo_id, filename="pytorch_model.bin", revision=revision
+        )
         model = cls.from_hparams(config_path)
         state_dict = torch.load(model_path, map_location="cpu")
         model.load_state_dict(state_dict)

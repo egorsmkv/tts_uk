@@ -25,13 +25,17 @@ class ConvNeXtBlock(nn.Module):
         adanorm_num_embeddings: Optional[int] = None,
     ):
         super().__init__()
-        self.dwconv = nn.Conv1d(dim, dim, kernel_size=7, padding=3, groups=dim)  # depthwise conv
+        self.dwconv = nn.Conv1d(
+            dim, dim, kernel_size=7, padding=3, groups=dim
+        )  # depthwise conv
         self.adanorm = adanorm_num_embeddings is not None
         if adanorm_num_embeddings:
             self.norm = AdaLayerNorm(adanorm_num_embeddings, dim, eps=1e-6)
         else:
             self.norm = nn.LayerNorm(dim, eps=1e-6)
-        self.pwconv1 = nn.Linear(dim, intermediate_dim)  # pointwise/1x1 convs, implemented with linear layers
+        self.pwconv1 = nn.Linear(
+            dim, intermediate_dim
+        )  # pointwise/1x1 convs, implemented with linear layers
         self.act = nn.GELU()
         self.pwconv2 = nn.Linear(intermediate_dim, dim)
         self.gamma = (
@@ -40,7 +44,9 @@ class ConvNeXtBlock(nn.Module):
             else None
         )
 
-    def forward(self, x: torch.Tensor, cond_embedding_id: Optional[torch.Tensor] = None) -> torch.Tensor:
+    def forward(
+        self, x: torch.Tensor, cond_embedding_id: Optional[torch.Tensor] = None
+    ) -> torch.Tensor:
         residual = x
         x = self.dwconv(x)
         x = x.transpose(1, 2)  # (B, C, T) -> (B, T, C)
@@ -73,8 +79,12 @@ class AdaLayerNorm(nn.Module):
         super().__init__()
         self.eps = eps
         self.dim = embedding_dim
-        self.scale = nn.Embedding(num_embeddings=num_embeddings, embedding_dim=embedding_dim)
-        self.shift = nn.Embedding(num_embeddings=num_embeddings, embedding_dim=embedding_dim)
+        self.scale = nn.Embedding(
+            num_embeddings=num_embeddings, embedding_dim=embedding_dim
+        )
+        self.shift = nn.Embedding(
+            num_embeddings=num_embeddings, embedding_dim=embedding_dim
+        )
         torch.nn.init.ones_(self.scale.weight)
         torch.nn.init.zeros_(self.shift.weight)
 
@@ -149,21 +159,54 @@ class ResBlock1(nn.Module):
 
         self.convs2 = nn.ModuleList(
             [
-                weight_norm(nn.Conv1d(dim, dim, kernel_size, 1, dilation=1, padding=self.get_padding(kernel_size, 1))),
-                weight_norm(nn.Conv1d(dim, dim, kernel_size, 1, dilation=1, padding=self.get_padding(kernel_size, 1))),
-                weight_norm(nn.Conv1d(dim, dim, kernel_size, 1, dilation=1, padding=self.get_padding(kernel_size, 1))),
+                weight_norm(
+                    nn.Conv1d(
+                        dim,
+                        dim,
+                        kernel_size,
+                        1,
+                        dilation=1,
+                        padding=self.get_padding(kernel_size, 1),
+                    )
+                ),
+                weight_norm(
+                    nn.Conv1d(
+                        dim,
+                        dim,
+                        kernel_size,
+                        1,
+                        dilation=1,
+                        padding=self.get_padding(kernel_size, 1),
+                    )
+                ),
+                weight_norm(
+                    nn.Conv1d(
+                        dim,
+                        dim,
+                        kernel_size,
+                        1,
+                        dilation=1,
+                        padding=self.get_padding(kernel_size, 1),
+                    )
+                ),
             ]
         )
 
         self.gamma = nn.ParameterList(
             [
-                nn.Parameter(layer_scale_init_value * torch.ones(dim, 1), requires_grad=True)
+                nn.Parameter(
+                    layer_scale_init_value * torch.ones(dim, 1), requires_grad=True
+                )
                 if layer_scale_init_value is not None
                 else None,
-                nn.Parameter(layer_scale_init_value * torch.ones(dim, 1), requires_grad=True)
+                nn.Parameter(
+                    layer_scale_init_value * torch.ones(dim, 1), requires_grad=True
+                )
                 if layer_scale_init_value is not None
                 else None,
-                nn.Parameter(layer_scale_init_value * torch.ones(dim, 1), requires_grad=True)
+                nn.Parameter(
+                    layer_scale_init_value * torch.ones(dim, 1), requires_grad=True
+                )
                 if layer_scale_init_value is not None
                 else None,
             ]
@@ -197,7 +240,7 @@ def safe_log(x: torch.Tensor, clip_val: float = 1e-5) -> torch.Tensor:
 
     Args:
         x (Tensor): Input tensor.
-        clip_val (float, optional): Minimum value to clip the input tensor. Defaults to 1e-5 to 
+        clip_val (float, optional): Minimum value to clip the input tensor. Defaults to 1e-5 to
         match Hifigan https://github.com/jik876/hifi-gan/blob/master/meldataset.py.
 
     Returns:
