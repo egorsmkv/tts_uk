@@ -56,7 +56,7 @@ import torchaudio
 
 from tts_uk.inference import synthesis
 
-mels, vocos_wav_gen, stats = synthesis(
+mels, wave, stats = synthesis(
     text="Ви можете протестувати синтез мовлення українською мовою. Просто введіть текст, який ви хочете прослухати.",
     voice="tetiana",  # tetiana, mykyta, lada
     n_takes=1,
@@ -74,7 +74,7 @@ mels, vocos_wav_gen, stats = synthesis(
 
 print(stats)
 
-torchaudio.save("audio.wav", vocos_wav_gen.cpu(), 44_100, encoding="PCM_S")
+torchaudio.save("audio.wav", wave.cpu(), 44_100, encoding="PCM_S")
 ```
 
 Use these Google colabs:
