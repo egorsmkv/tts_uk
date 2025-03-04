@@ -4,9 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tts_uk"
-description = "Text-to-Speech for Ukrainian"
+description = "High-fidelity speech synthesis for Ukrainian using modern neural networks."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = "^3.9"
 authors = [
   { name = "Yehor Smoliakov", email = "egorsmkv@gmail.com" },
 ]
