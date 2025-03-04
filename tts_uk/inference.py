@@ -5,16 +5,13 @@ from pathlib import Path
 import torch
 from huggingface_hub import hf_hub_download
 
-# Vocoder
-from vocos.pretrained import Vocos
-
+from .torch_env import device
 from .common import update_params
 from .config import config
 from .data import TextProcessor
 
-# RAD-TTS code
+from vocos.pretrained import Vocos
 from .radtts import RADTTS
-from .torch_env import device
 
 
 def download_file_from_repo(
