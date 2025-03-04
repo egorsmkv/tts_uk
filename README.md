@@ -26,7 +26,8 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 - Control over duration, F0, and energy;
 - Fast vocoding using Vocos;
 - Can synthesize long sentences;
-- Tested on **Windows** and **WSL**.
+- Tested on **Windows** and **WSL**;
+- Python support: >=3.9.
 
 ## Installation
 
