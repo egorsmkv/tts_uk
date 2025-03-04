@@ -1,0 +1,26 @@
+Vocos(
+  (feature_extractor): MelSpectrogramFeatures(
+    (mel_spec): MelSpectrogram(
+      (spectrogram): Spectrogram()
+      (mel_scale): MelScale()
+    )
+  )
+  (backbone): VocosBackbone(
+    (embed): Conv1d(80, 512, kernel_size=(7,), stride=(1,), padding=(3,))
+    (norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+    (convnext): ModuleList(
+      (0-7): 8 x ConvNeXtBlock(
+        (dwconv): Conv1d(512, 512, kernel_size=(7,), stride=(1,), padding=(3,), groups=512)
+        (norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (pwconv1): Linear(in_features=512, out_features=1536, bias=True)
+        (act): GELU(approximate='none')
+        (pwconv2): Linear(in_features=1536, out_features=512, bias=True)
+      )
+    )
+    (final_layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+  )
+  (head): ISTFTHead(
+    (out): Linear(in_features=512, out_features=2050, bias=True)
+    (istft): ISTFT()
+  )
+)
