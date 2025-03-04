@@ -22,6 +22,9 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 ## Features
 
 - Multispeaker: 2 female + 1 male voices;
+- Control over duration, F0, and energy;
+- Fast vocoding using Vocos;
+- Can synthesize long sentences;
 - Tested on **Windows** and **WSL**.
 
 ## Installation
