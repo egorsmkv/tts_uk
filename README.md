@@ -36,7 +36,7 @@ pip install tts-uk
 # from GitHub
 pip install git+https://github.com/egorsmkv/tts_uk
 
-# using GitHub
+# using git and local setup
 git clone https://github.com/egorsmkv/tts_uk
 cd tts_uk
 uv sync
