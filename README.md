@@ -81,3 +81,9 @@ uv run example.py
 
 - Acoustic model: [Yehor Smoliakov](https://github.com/egorsmkv)
 - Vocoder: [Serhiy Stetskovych](https://github.com/patriotyk)
+
+## Community
+
+- **Discord**: https://bit.ly/discord-uds
+- Speech Recognition: https://t.me/speech_recognition_uk
+- Speech Synthesis: https://t.me/speech_synthesis_uk
