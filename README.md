@@ -129,4 +129,4 @@ Also, follow [our Speech-UK initiative](https://huggingface.co/speech-uk) on Hug
 ## Acknowledgements
 
 - [RAD-TTS by NVIDIA](https://github.com/NVIDIA/radtts)
-- [Vocos fork by @langtech-bsc](https://github.com/langtech-bsc/vocos/tree/matcha)
+- [Vocos fork by langtech-bsc](https://github.com/langtech-bsc/vocos/tree/matcha)
