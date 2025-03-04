@@ -6,6 +6,10 @@
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
 
+High-fidelity speech synthesis for Ukrainian using modern neural networks.
+
+## Demo
+
 Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo) or just [listen to samples here](https://huggingface.co/spaces/speech-uk/listen-tts-voices).
 
 ## Notes
