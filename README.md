@@ -27,7 +27,7 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 - High-fidelity speech generation using the [RAD-TTS++](https://github.com/egorsmkv/radtts-uk) acoustic model;
 - Fast vocoding using [Vocos](https://github.com/gemelo-ai/vocos);
 - Synthesizes long sentences effectively;
-- Supports a sampling rate of 44.1 kHz
+- Supports a sampling rate of 44.1 kHz;
 - Tested on Linux environments and **Windows**/**WSL**;
 - Python API (requires Python 3.9 or later);
 - CUDA-enabled for GPU acceleration.
