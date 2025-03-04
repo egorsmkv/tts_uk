@@ -24,7 +24,8 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 
 - Multispeaker: 2 female + 1 male voices;
 - Control over duration, F0, and energy;
-- Fast vocoding using Vocos;
+- High-fidelity speech using [RAD-TTS++](https://github.com/egorsmkv/radtts-uk);
+- Fast vocoding using [Vocos](https://github.com/gemelo-ai/vocos);
 - Can synthesize long sentences;
 - Tested on **Windows** and **WSL**;
 - Python support: >=3.9.
