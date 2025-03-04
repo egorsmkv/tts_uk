@@ -186,4 +186,4 @@ def synthesis(
         "speech_rate": speech_rate,
     }
 
-    return [mels, wav_gen.cpu(), stats]
+    return [mels, wav_gen, stats]
