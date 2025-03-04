@@ -10,12 +10,14 @@
 [![PyPI version](https://img.shields.io/pypi/v/tts_uk)](https://pypi.org/project/tts_uk/)
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
-[![hf-space](https://img.shields.io/badge/hf-space-blue)](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14966501.svg)](https://doi.org/10.5281/zenodo.14966501)
 
 High-fidelity speech synthesis for Ukrainian using modern neural networks.
 
 ## Demo
+
+[![HF Space](https://img.shields.io/badge/HF-%F0%9F%A4%97%20Space-yellow)](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo)
+[![Google Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing)
 
 Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo) or just [listen to samples here](https://huggingface.co/spaces/speech-uk/listen-tts-voices).
 
