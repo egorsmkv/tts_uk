@@ -12,6 +12,7 @@
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
 [![speech-uk](https://img.shields.io/badge/speech-uk-blue)](https://huggingface.co/speech-uk)
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo)
 
 High-fidelity speech synthesis for Ukrainian using modern neural networks.
 
@@ -97,11 +98,18 @@ Code has the MIT license.
 
 ## Authors
 
-- Acoustic model: [Yehor Smoliakov](https://github.com/egorsmkv)
-- Vocoder: [Serhiy Stetskovych](https://github.com/patriotyk)
+### Acoustic model
+
+- [Yehor Smoliakov](https://github.com/egorsmkv), [HF profile](https://huggingface.co/Yehor) 
+
+### Vocoder
+
+- [Serhiy Stetskovych](https://github.com/patriotyk), [HF profile](https://huggingface.co/patriotyk) 
 
 ## Community
 
 - **Discord**: https://bit.ly/discord-uds
 - Speech Recognition: https://t.me/speech_recognition_uk
 - Speech Synthesis: https://t.me/speech_synthesis_uk
+
+Also, follow [the Speech-Uk initiative](https://huggingface.co/speech-uk) on Hugging Face!
