@@ -66,3 +66,8 @@ Or using a terminal:
 ```shell
 uv run example.py
 ```
+
+## Authors
+
+- Acoustic model: [Yehor Smoliakov](https://github.com/egorsmkv)
+- Vocoder: [Serhiy Stetskovych](https://github.com/patriotyk)
