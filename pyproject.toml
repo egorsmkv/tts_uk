@@ -4,6 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "tts_uk"
+license = "mit"
 description = "High-fidelity speech synthesis for Ukrainian using modern neural networks."
 readme = "README.md"
 requires-python = "^3.9"
@@ -18,6 +19,7 @@ dependencies = [
     "numba>=0.60",
     "librosa>=0.10",
 ]
+keywords= ["text-to-speech", "tts", "synthesis", "ukrainian", "sound", "wave", "wav", "audio", "media"]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
