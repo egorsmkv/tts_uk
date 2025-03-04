@@ -19,7 +19,7 @@ High-fidelity speech synthesis for Ukrainian using modern neural networks.
 
 Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo) or just [listen to samples here](https://huggingface.co/spaces/speech-uk/listen-tts-voices).
 
-## Notes
+## Features
 
 - Multispeaker: 2 female + 1 male voices;
 - Tested on **Windows** and **WSL**.
