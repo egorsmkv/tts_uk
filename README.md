@@ -22,27 +22,29 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 
 ## Features
 
-- Multi-speaker model: 2 **female** + 1 **male** voices;
-- Control over duration, F0, and energy;
-- High-fidelity speech using [RAD-TTS++](https://github.com/egorsmkv/radtts-uk);
+- Multi-speaker model: 2 **female** (Tetiana, Lada) + 1 **male** (Mykyta) voices;
+- Fine-grained control over speech parameters, including duration, fundamental frequency (F0), and energy;
+- High-fidelity speech generation using the [RAD-TTS++](https://github.com/egorsmkv/radtts-uk) acoustic model;
 - Fast vocoding using [Vocos](https://github.com/gemelo-ai/vocos);
-- Can synthesize long sentences;
-- Tested on **Windows** and **WSL**;
-- Python support: >=3.9.
+- Synthesizes long sentences effectively;
+- Supports a sampling rate of 44.1 kHz
+- Tested on Linux environments and **Windows**/**WSL**;
+- Python API (requires Python 3.9 or later);
+- CUDA-enabled for GPU acceleration.
 
 ## Installation
 
 ```shell
-# from PyPI
+# Install from PyPI
 pip install tts-uk
 
-# from GitHub
+# OR, for the latest development version:
 pip install git+https://github.com/egorsmkv/tts_uk
 
-# using git and local setup
+# OR, use git and local setup
 git clone https://github.com/egorsmkv/tts_uk
 cd tts_uk
-uv sync
+uv sync # uv will handle the virtual environment
 ```
 
 Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#installation) section.
@@ -58,6 +60,12 @@ import torchaudio
 
 from tts_uk.inference import synthesis
 
+sampling_rate = 44_100
+
+# Perform the synthesis, `synthesis` function returns:
+# - mels: Mel spectrograms of the generated audio.
+# - wave: The synthesized waveform by a Vocoder as a PyTorch tensor.
+# - stats: A dictionary containing synthesis statistics (processing time, duration, speech rate, etc).
 mels, wave, stats = synthesis(
     text="Ви можете протестувати синтез мовлення українською мовою. Просто введіть текст, який ви хочете прослухати.",
     voice="tetiana",  # tetiana, mykyta, lada
@@ -76,13 +84,14 @@ mels, wave, stats = synthesis(
 
 print(stats)
 
-torchaudio.save("audio.wav", wave.cpu(), 44_100, encoding="PCM_S")
+# Save the generated audio to a WAV file.
+torchaudio.save("audio.wav", wave.cpu(), sampling_rate, encoding="PCM_S")
 ```
 
 Use these Google colabs:
 
 - [CPU inference](https://colab.research.google.com/drive/1dsQiVhTaNw5lRfUiCZeECMuEbtEEYqbZ?usp=sharing)
-- [GPU inference](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing)
+- [GPU inference](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing) on T4 card
 
 Or run synthesis in a terminal:
 
@@ -100,9 +109,9 @@ Please feel free to connect with us using [the Issues section](https://github.co
 
 Code has the MIT license.
 
-## Authors
+## Model authors
 
-### Acoustic model
+### Acoustic
 
 - [Yehor Smoliakov](https://github.com/egorsmkv), [HF profile](https://huggingface.co/Yehor) 
 
@@ -112,8 +121,13 @@ Code has the MIT license.
 
 ## Community
 
-- **Discord**: https://bit.ly/discord-uds
+- Discord: https://bit.ly/discord-uds
 - Speech Recognition: https://t.me/speech_recognition_uk
 - Speech Synthesis: https://t.me/speech_synthesis_uk
 
-Also, follow [the Speech-UK initiative](https://huggingface.co/speech-uk) on Hugging Face!
+Also, follow [our Speech-UK initiative](https://huggingface.co/speech-uk) on Hugging Face!
+
+## Acknowledgements
+
+- [RAD-TTS by NVIDIA](https://github.com/NVIDIA/radtts)
+- [Vocos fork by @langtech-bsc](https://github.com/langtech-bsc/vocos/tree/matcha)
