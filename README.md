@@ -22,7 +22,7 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 
 ## Features
 
-- Multispeaker: 2 female + 1 male voices;
+- Multi-speaker model: 2 female + 1 male voices;
 - Control over duration, F0, and energy;
 - High-fidelity speech using [RAD-TTS++](https://github.com/egorsmkv/radtts-uk);
 - Fast vocoding using [Vocos](https://github.com/gemelo-ai/vocos);
