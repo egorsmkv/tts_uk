@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Smoliakov"
+  given-names: "Yehor"
+  orcid: "https://orcid.org/0000-0002-8272-2095"
+title: "High-fidelity speech synthesis for Ukrainian using modern neural networks."
+version: v1.3.5
+date-released: 2025-03-04
