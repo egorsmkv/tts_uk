@@ -8,7 +8,6 @@
 
 [![CI](https://github.com/egorsmkv/tts_uk/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/egorsmkv/tts_uk/actions/workflows/ci.yml)
 [![PyPI version](https://img.shields.io/pypi/v/tts_uk)](https://pypi.org/project/tts_uk/)
-[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/tts_uk)](https://pypi.org/project/tts_uk/)
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
 [![hf-space](https://img.shields.io/badge/hf-space-blue)](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo)
