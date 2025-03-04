@@ -90,6 +90,8 @@ Or run synthesis in a terminal:
 uv run example.py
 ```
 
+If you need to synthesize articles we recommend consider [wtpsplit](https://github.com/segment-any-text/wtpsplit).
+
 ## Get help and support
 
 Please feel free to connect with us using [the Issues section](https://github.com/egorsmkv/tts_uk/issues).
