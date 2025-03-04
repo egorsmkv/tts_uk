@@ -1,0 +1,530 @@
+RADTTS(
+  (speaker_embedding): Embedding(3, 16)
+  (embedding): Embedding(185, 512)
+  (flows): ModuleList(
+    (0-1): 2 x FlowStep(
+      (invtbl_conv): Invertible1x1ConvLUS()
+      (affine_tfn): AffineTransformationLayer(
+        (affine_param_predictor): WN(
+          (in_layers): ModuleList(
+            (0): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (1): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(4,), dilation=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (2): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(8,), dilation=(4,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (3): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(16,), dilation=(8,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+          )
+          (res_skip_layers): ModuleList(
+            (0-3): 4 x ParametrizedConv1d(
+              1024, 1024, kernel_size=(1,), stride=(1,)
+              (parametrizations): ModuleDict(
+                (weight): ParametrizationList(
+                  (0): _WeightNorm()
+                )
+              )
+            )
+          )
+          (start): ParametrizedConv1d(
+            1120, 1024, kernel_size=(1,), stride=(1,)
+            (parametrizations): ModuleDict(
+              (weight): ParametrizationList(
+                (0): _WeightNorm()
+              )
+            )
+          )
+          (softplus): Softplus(beta=1.0, threshold=20.0)
+          (end): Conv1d(1024, 160, kernel_size=(1,), stride=(1,))
+        )
+      )
+    )
+    (2-3): 2 x FlowStep(
+      (invtbl_conv): Invertible1x1ConvLUS()
+      (affine_tfn): AffineTransformationLayer(
+        (affine_param_predictor): WN(
+          (in_layers): ModuleList(
+            (0): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (1): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(4,), dilation=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (2): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(8,), dilation=(4,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (3): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(16,), dilation=(8,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+          )
+          (res_skip_layers): ModuleList(
+            (0-3): 4 x ParametrizedConv1d(
+              1024, 1024, kernel_size=(1,), stride=(1,)
+              (parametrizations): ModuleDict(
+                (weight): ParametrizationList(
+                  (0): _WeightNorm()
+                )
+              )
+            )
+          )
+          (start): ParametrizedConv1d(
+            1119, 1024, kernel_size=(1,), stride=(1,)
+            (parametrizations): ModuleDict(
+              (weight): ParametrizationList(
+                (0): _WeightNorm()
+              )
+            )
+          )
+          (softplus): Softplus(beta=1.0, threshold=20.0)
+          (end): Conv1d(1024, 158, kernel_size=(1,), stride=(1,))
+        )
+      )
+    )
+    (4-5): 2 x FlowStep(
+      (invtbl_conv): Invertible1x1ConvLUS()
+      (affine_tfn): AffineTransformationLayer(
+        (affine_param_predictor): WN(
+          (in_layers): ModuleList(
+            (0): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (1): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(4,), dilation=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (2): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(8,), dilation=(4,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (3): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(16,), dilation=(8,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+          )
+          (res_skip_layers): ModuleList(
+            (0-3): 4 x ParametrizedConv1d(
+              1024, 1024, kernel_size=(1,), stride=(1,)
+              (parametrizations): ModuleDict(
+                (weight): ParametrizationList(
+                  (0): _WeightNorm()
+                )
+              )
+            )
+          )
+          (start): ParametrizedConv1d(
+            1118, 1024, kernel_size=(1,), stride=(1,)
+            (parametrizations): ModuleDict(
+              (weight): ParametrizationList(
+                (0): _WeightNorm()
+              )
+            )
+          )
+          (softplus): Softplus(beta=1.0, threshold=20.0)
+          (end): Conv1d(1024, 156, kernel_size=(1,), stride=(1,))
+        )
+      )
+    )
+    (6-7): 2 x FlowStep(
+      (invtbl_conv): Invertible1x1ConvLUS()
+      (affine_tfn): AffineTransformationLayer(
+        (affine_param_predictor): WN(
+          (in_layers): ModuleList(
+            (0): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (1): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(4,), dilation=(2,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (2): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(8,), dilation=(4,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+            (3): ConvNorm(
+              (conv): ParametrizedPartialConv1d(
+                1024, 1024, kernel_size=(5,), stride=(1,), padding=(16,), dilation=(8,)
+                (parametrizations): ModuleDict(
+                  (weight): ParametrizationList(
+                    (0): _WeightNorm()
+                  )
+                )
+              )
+            )
+          )
+          (res_skip_layers): ModuleList(
+            (0-3): 4 x ParametrizedConv1d(
+              1024, 1024, kernel_size=(1,), stride=(1,)
+              (parametrizations): ModuleDict(
+                (weight): ParametrizationList(
+                  (0): _WeightNorm()
+                )
+              )
+            )
+          )
+          (start): ParametrizedConv1d(
+            1117, 1024, kernel_size=(1,), stride=(1,)
+            (parametrizations): ModuleDict(
+              (weight): ParametrizationList(
+                (0): _WeightNorm()
+              )
+            )
+          )
+          (softplus): Softplus(beta=1.0, threshold=20.0)
+          (end): Conv1d(1024, 154, kernel_size=(1,), stride=(1,))
+        )
+      )
+    )
+  )
+  (encoder): Encoder(
+    (convolutions): ModuleList(
+      (0-2): 3 x Sequential(
+        (0): ConvNorm(
+          (conv): PartialConv1d(512, 512, kernel_size=(5,), stride=(1,), padding=(2,))
+        )
+        (1): InstanceNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=False)
+      )
+    )
+    (lstm): ParametrizedLSTM(
+      512, 256, batch_first=True, bidirectional=True
+      (parametrizations): ModuleDict(
+        (weight_hh_l0): ParametrizationList(
+          (0): _SpectralNorm()
+        )
+        (weight_hh_l0_reverse): ParametrizationList(
+          (0): _SpectralNorm()
+        )
+      )
+    )
+  )
+  (length_regulator): LengthRegulator()
+  (attention): ConvAttention(
+    (softmax): Softmax(dim=3)
+    (log_softmax): LogSoftmax(dim=3)
+    (key_proj): Sequential(
+      (0): ConvNorm(
+        (conv): Conv1d(512, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+      )
+      (1): ReLU()
+      (2): ConvNorm(
+        (conv): Conv1d(1024, 80, kernel_size=(1,), stride=(1,))
+      )
+    )
+    (query_proj): Sequential(
+      (0): ConvNorm(
+        (conv): Conv1d(80, 160, kernel_size=(3,), stride=(1,), padding=(1,))
+      )
+      (1): ReLU()
+      (2): ConvNorm(
+        (conv): Conv1d(160, 80, kernel_size=(1,), stride=(1,))
+      )
+      (3): ReLU()
+      (4): ConvNorm(
+        (conv): Conv1d(80, 80, kernel_size=(1,), stride=(1,))
+      )
+    )
+  )
+  (context_lstm): ParametrizedLSTM(
+    1044, 520, batch_first=True, bidirectional=True
+    (parametrizations): ModuleDict(
+      (weight_hh_l0): ParametrizationList(
+        (0): _SpectralNorm()
+      )
+      (weight_hh_l0_reverse): ParametrizationList(
+        (0): _SpectralNorm()
+      )
+    )
+  )
+  (unfold): Unfold(kernel_size=(2, 1), dilation=1, padding=0, stride=2)
+  (dur_pred_layer): DAP(
+    (bottleneck_layer): BottleneckLayerLayer(
+      (projection_fn): ConvNorm(
+        (conv): ParametrizedConv1d(
+          512, 32, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (non_linearity): ReLU()
+    )
+    (feat_pred_fn): ConvLSTMLinear(
+      (dropout): Dropout(p=0.25, inplace=False)
+      (convolutions): ModuleList(
+        (0): ParametrizedConv1d(
+          48, 256, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+        (1): ParametrizedConv1d(
+          256, 256, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (bilstm): ParametrizedLSTM(
+        256, 128, batch_first=True, bidirectional=True
+        (parametrizations): ModuleDict(
+          (weight_hh_l0): ParametrizationList(
+            (0): _SpectralNorm()
+          )
+          (weight_hh_l0_reverse): ParametrizationList(
+            (0): _SpectralNorm()
+          )
+        )
+      )
+      (dense): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (unvoiced_bias_module): Sequential(
+    (0): LinearNorm(
+      (linear_layer): Linear(in_features=512, out_features=1, bias=True)
+    )
+    (1): ReLU()
+  )
+  (v_pred_module): DAP(
+    (bottleneck_layer): BottleneckLayerLayer(
+      (projection_fn): ConvNorm(
+        (conv): ParametrizedConv1d(
+          512, 32, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (non_linearity): ReLU()
+    )
+    (feat_pred_fn): ConvLSTMLinear(
+      (dropout): Dropout(p=0.5, inplace=False)
+      (convolutions): ModuleList(
+        (0): ParametrizedConv1d(
+          48, 256, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+        (1): ParametrizedConv1d(
+          256, 256, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (dense): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (v_embeddings): Embedding(4, 512)
+  (f0_pred_module): DAP(
+    (bottleneck_layer): BottleneckLayerLayer(
+      (projection_fn): ConvNorm(
+        (conv): ParametrizedConv1d(
+          512, 32, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (non_linearity): ReLU()
+    )
+    (feat_pred_fn): ConvLSTMLinear(
+      (dropout): Dropout(p=0.5, inplace=False)
+      (convolutions): ModuleList(
+        (0): ParametrizedConv1d(
+          48, 256, kernel_size=(11,), stride=(1,), padding=(5,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+        (1): ParametrizedConv1d(
+          256, 256, kernel_size=(11,), stride=(1,), padding=(5,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (bilstm): ParametrizedLSTM(
+        256, 128, batch_first=True, bidirectional=True
+        (parametrizations): ModuleDict(
+          (weight_hh_l0): ParametrizationList(
+            (0): _SpectralNorm()
+          )
+          (weight_hh_l0_reverse): ParametrizationList(
+            (0): _SpectralNorm()
+          )
+        )
+      )
+      (dense): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+  (energy_pred_module): DAP(
+    (bottleneck_layer): BottleneckLayerLayer(
+      (projection_fn): ConvNorm(
+        (conv): ParametrizedConv1d(
+          512, 32, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (non_linearity): ReLU()
+    )
+    (feat_pred_fn): ConvLSTMLinear(
+      (dropout): Dropout(p=0.25, inplace=False)
+      (convolutions): ModuleList(
+        (0): ParametrizedConv1d(
+          48, 256, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+        (1): ParametrizedConv1d(
+          256, 256, kernel_size=(3,), stride=(1,), padding=(1,)
+          (parametrizations): ModuleDict(
+            (weight): ParametrizationList(
+              (0): _WeightNorm()
+            )
+          )
+        )
+      )
+      (bilstm): ParametrizedLSTM(
+        256, 128, batch_first=True, bidirectional=True
+        (parametrizations): ModuleDict(
+          (weight_hh_l0): ParametrizationList(
+            (0): _SpectralNorm()
+          )
+          (weight_hh_l0_reverse): ParametrizationList(
+            (0): _SpectralNorm()
+          )
+        )
+      )
+      (dense): Linear(in_features=256, out_features=1, bias=True)
+    )
+  )
+)
