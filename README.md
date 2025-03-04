@@ -116,4 +116,4 @@ Code has the MIT license.
 - Speech Recognition: https://t.me/speech_recognition_uk
 - Speech Synthesis: https://t.me/speech_synthesis_uk
 
-Also, follow [the Speech-Uk initiative](https://huggingface.co/speech-uk) on Hugging Face!
+Also, follow [the Speech-UK initiative](https://huggingface.co/speech-uk) on Hugging Face!
