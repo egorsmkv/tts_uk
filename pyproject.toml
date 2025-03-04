@@ -35,8 +35,8 @@ classifiers = [
 dynamic = ["version"]
 
 [project.urls]
-homepage = "https://github.com/egorsmkv/tts_uk"
-repository = "https://github.com/egorsmkv/tts_uk"
+Homepage = "https://github.com/egorsmkv/tts_uk"
+Repository = "https://github.com/egorsmkv/tts_uk"
 
 [project.optional-dependencies]
 dev = [
