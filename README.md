@@ -18,7 +18,7 @@ Check out our demo on [Hugging Face space](https://huggingface.co/spaces/Yehor/r
 - Multispeaker: 2 female + 1 male voices;
 - Tested on **Windows** and **WSL**.
 
-## Install
+## Installation
 
 ```shell
 # from PyPI
@@ -37,14 +37,9 @@ Read [uv's installation](https://github.com/astral-sh/uv?tab=readme-ov-file#inst
 
 Also, you can [download the repository](https://github.com/egorsmkv/tts_uk/archive/refs/heads/main.zip) as a ZIP archive.
 
-## Google Colabs
+## Getting started
 
-- [CPU inference](https://colab.research.google.com/drive/1dsQiVhTaNw5lRfUiCZeECMuEbtEEYqbZ?usp=sharing)
-- [GPU inference](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing)
-
-## Example
-
-As the code:
+Code example:
 
 ```python
 import torchaudio
@@ -72,7 +67,12 @@ print(stats)
 torchaudio.save("audio.wav", vocos_wav_gen.cpu(), 44_100, encoding="PCM_S")
 ```
 
-Or using a terminal:
+Use these Google colabs:
+
+- [CPU inference](https://colab.research.google.com/drive/1dsQiVhTaNw5lRfUiCZeECMuEbtEEYqbZ?usp=sharing)
+- [GPU inference](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing)
+
+Or run synthesis in a terminal:
 
 ```shell
 uv run example.py
