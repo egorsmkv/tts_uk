@@ -5,6 +5,7 @@ authors:
   given-names: "Yehor"
   orcid: "https://orcid.org/0000-0002-8272-2095"
 title: "High-fidelity speech synthesis for Ukrainian using modern neural networks."
-version: v1.3.5
+version: 1.3.5
+doi: 10.5281/zenodo.14966501
 date-released: 2025-03-04
 url: "https://github.com/egorsmkv/tts_uk"
