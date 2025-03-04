@@ -78,6 +78,14 @@ Or run synthesis in a terminal:
 uv run example.py
 ```
 
+## Get help and support
+
+Please feel free to connect with us using [the Issues section](https://github.com/egorsmkv/tts_uk/issues).
+
+## License
+
+Code has the MIT license.
+
 ## Authors
 
 - Acoustic model: [Yehor Smoliakov](https://github.com/egorsmkv)
