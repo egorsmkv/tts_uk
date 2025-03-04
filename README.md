@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/egorsmkv/tts_uk">
-    <img loading="lazy" alt="tts_uk" src="https://github.com/egorsmkv/tts_uk/raw/main/assets/logo.webp" width="100%"/>
+    <img loading="lazy" alt="tts_uk" src="https://github.com/egorsmkv/tts_uk/raw/main/assets/logo_github.jpg" width="100%"/>
   </a>
 </p>
 
