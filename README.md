@@ -12,7 +12,9 @@
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
 [![speech-uk](https://img.shields.io/badge/speech-uk-blue)](https://huggingface.co/speech-uk)
-[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)](https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14966501.svg)](https://doi.org/10.5281/zenodo.14966501)
+[![Open in Spaces](https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg)]
+(https://huggingface.co/spaces/Yehor/radtts-uk-vocos-demo)
 
 High-fidelity speech synthesis for Ukrainian using modern neural networks.
 
