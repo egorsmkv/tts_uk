@@ -1,9 +1,9 @@
 python_bin := `which python3`
 
 install:
-	{{python_bin}} -m pip install build
+	{{python_bin}} -m pip install build twine
 	
-build:
+build: install
 	{{python_bin}} -m build
 
 publish: build
