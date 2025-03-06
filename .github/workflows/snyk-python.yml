@@ -21,7 +21,7 @@ jobs:
       - name: Generate requirements.txt
         run: uv pip freeze > requirements.txt
 
-      - name: Show at requirements.txt
+      - name: Look at requirements.txt
         run: cat requirements.txt
 
       - name: Check Python

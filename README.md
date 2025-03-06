@@ -6,13 +6,18 @@
 
 # Text-to-Speech for Ukrainian
 
-[![CI](https://github.com/egorsmkv/tts_uk/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/egorsmkv/tts_uk/actions/workflows/ci.yml)
-[![PyPI version](https://img.shields.io/pypi/v/tts_uk)](https://pypi.org/project/tts_uk/)
+[![PyPI Version](https://img.shields.io/pypi/v/tts_uk)](https://pypi.org/project/tts_uk/)
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14966501.svg)](https://doi.org/10.5281/zenodo.14966501)
 
 High-fidelity speech synthesis for Ukrainian using modern neural networks.
+
+## Statuses
+
+[![CI Pipeline](https://github.com/egorsmkv/tts_uk/actions/workflows/ci.yml/badge.svg)](https://github.com/egorsmkv/tts_uk/actions/workflows/ci.yml)
+[![Dependabot Updates](https://github.com/egorsmkv/tts_uk/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/egorsmkv/tts_uk/actions/workflows/dependabot/dependabot-updates)
+[![Snyk Security](https://github.com/egorsmkv/tts_uk/actions/workflows/snyk-python.yml/badge.svg)](https://github.com/egorsmkv/tts_uk/actions/workflows/snyk-python.yml)
 
 ## Demo
 
