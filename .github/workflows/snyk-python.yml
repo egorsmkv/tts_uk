@@ -1,0 +1,32 @@
+name: Snyk - python
+
+on:
+  schedule:
+    - cron: "0 0 * * 0" # Run weekly on Sunday
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  security:
+    permissions: write-all
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Generate requirements.txt
+        run: uv pip freeze > requirements.txt
+
+      - name: Show at requirements.txt
+        run: cat requirements.txt
+
+      - name: Check Python
+        uses: snyk/actions/python@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --file=requirements.txt --command=python3
