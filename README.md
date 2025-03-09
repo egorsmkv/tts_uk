@@ -97,7 +97,7 @@ torchaudio.save("audio.wav", wave.cpu(), sampling_rate, encoding="PCM_S")
 Use these Google colabs:
 
 - [CPU inference](https://colab.research.google.com/drive/1dsQiVhTaNw5lRfUiCZeECMuEbtEEYqbZ?usp=sharing)
-- [GPU inference](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing) on T4 card
+- [GPU inference](https://colab.research.google.com/drive/1sdCPnZJRNAf12PhPut4gu6T_o6lYaUdo?usp=sharing) on T4 card (long document to synthesize)
 
 Or run synthesis in a terminal:
 
