@@ -115,6 +115,8 @@ Please feel free to connect with us using [the Issues section](https://github.co
 
 Code has the MIT license.
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk?ref=badge_large&issueType=license)
+
 ## Model authors
 
 ### Acoustic
