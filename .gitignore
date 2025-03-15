@@ -9,3 +9,5 @@ build/
 dist/
 
 audio.wav
+
+.dccache
