@@ -10,7 +10,7 @@
 [![License MIT](https://img.shields.io/github/license/egorsmkv/tts_uk)](https://opensource.org/licenses/MIT)
 [![PyPI Downloads](https://static.pepy.tech/badge/tts_uk/month)](https://pepy.tech/projects/tts_uk)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14966501.svg)](https://doi.org/10.5281/zenodo.14966501)
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk.svg?type=shield&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk?ref=badge_shield&issueType=license)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk.svg?type=small)](https://app.fossa.com/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk?ref=badge_small)
 
 High-fidelity speech synthesis for Ukrainian using modern neural networks.
 
@@ -115,8 +115,6 @@ Please feel free to connect with us using [the Issues section](https://github.co
 ## License
 
 Code has the MIT license.
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk.svg?type=large&issueType=license)](https://app.fossa.com/projects/git%2Bgithub.com%2Fegorsmkv%2Ftts_uk?ref=badge_large&issueType=license)
 
 ## Model authors
 
